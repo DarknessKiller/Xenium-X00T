@@ -1,6 +1,6 @@
 	#!/bin/bash
 	clear
-	echo Overdose Kernel Compile Tool
+	echo Xenium Kernel Compile Tool
 	echo By MrDarkness
 	echo Please Sit Back And Chill...
 	export MAIN=`readlink -f ../`
@@ -17,6 +17,6 @@
 	echo "Compile Done"
 	echo ""
 	cd $KERNELDIR/built
-	zip -r Overdose-R25S-Release-X00T-`date +%Y%m%d_%H%M`.zip * -x "kernel_output.txt" "*.zip"
+	zip -r Xenium-R7-Release-X00T-`date +%Y%m%d_%H%M`.zip * -x "kernel_output.txt" "*.zip"
 	cd $KERNELDIR/
 	echo "Zip Done"
