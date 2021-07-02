@@ -1,6 +1,6 @@
 	#!/bin/bash
 	clear
-	echo Overdose Kernel Compile Tool
+	echo Xenium Kernel Compile Tool
 	echo By MrDarkness
 	echo Please Sit Back And Chill...
 	export MAIN=`readlink -f ../`
@@ -18,12 +18,12 @@
 	echo "LV Compile Done"
 	echo ""
 	cd $KERNELDIR/built
-	zip -r Overdose-X00TD-`date +%Y%m%d_%H%M`.zip * -x "*.zip"
+	zip -r Xenium-X00TD-`date +%Y%m%d_%H%M`.zip * -x "*.zip"
 	cd $KERNELDIR/
 
 	# NLV Version
 	rm .version
-	git cherry-pick 4237e8acd7e92210c02d50ceed1f17cd16eaa25c
+	git cherry-pick 40b45ca9d147f6fac8818e24fad602c1ff0aa042
 	rm $KERNELDIR/built/Image.gz-dtb
 	make ARCH=arm64 X00TD_defconfig
 	make -j$(nproc --all) ARCH=arm64 \
@@ -35,7 +35,7 @@
 	echo "NLV Compile Done"
 	echo ""
 	cd $KERNELDIR/built
-	zip -r Overdose-X00TD-`date +%Y%m%d_%H%M`-NLV.zip * -x "*.zip"
+	zip -r Xenium-X00TD-`date +%Y%m%d_%H%M`-NLV.zip * -x "*.zip"
 	cd $KERNELDIR/
 	git reset --hard HEAD^
 	echo "Zip Done"
