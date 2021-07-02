@@ -1,6 +1,6 @@
 	#!/bin/bash
 	clear
-	echo Overdose Kernel Compile Tool
+	echo Xenium Kernel Compile Tool
 	echo By MrDarkness
 	echo Please Sit Back And Chill...
 	export MAIN=`readlink -f ../`
@@ -18,7 +18,7 @@
 	echo "LV Compile Done"
 	echo ""
 	cd $KERNELDIR/built
-	zip -r Overdose-X00TD-`date +%Y%m%d_%H%M`.zip * -x "*.zip" "nlv.patchs"
+	zip -r Xenium-X00TD-`date +%Y%m%d_%H%M`.zip * -x "*.zip" "nlv.patchs"
 	cd $KERNELDIR/
 
 	# NLV Version
@@ -35,7 +35,7 @@
 	echo "NLV Compile Done"
 	echo ""
 	cd $KERNELDIR/built
-	zip -r Overdose-X00TD-`date +%Y%m%d_%H%M`-NLV.zip * -x "*.zip" "nlv.patchs"
+	zip -r Xenium-X00TD-`date +%Y%m%d_%H%M`-NLV.zip * -x "*.zip" "nlv.patchs"
 	cd $KERNELDIR/
 	git reset --hard HEAD^
 	echo "Zip Done"
