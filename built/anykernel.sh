@@ -4,7 +4,7 @@
 ## AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=Xenium Kernel - #LoveXe
+kernel.string=XeniumOC Kernel - #LoveXe
 do.devicecheck=1
 do.modules=0
 do.systemless=1
